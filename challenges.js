@@ -16,13 +16,27 @@ User Input: 10
 Output: "The late fee is $2.50."
 */
 
-// ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+// ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️ 
 
+function calculateLateFee(overduedays){
+   const FeePerDay= 0.25;
+   const Total= FeePerDay * overduedays;
+   console.log(`the late fee is $${Total.toFixed(2)}`);
+}
+const overduedays= prompt("enter the number of overduedays");
+calculateLateFee(overduedays);
 
 
 // Extra Task:
 // - Convert the function into a function expression.
-
+/*const calculateLateFee= function(overduedays){
+   const FeePerDay=0.25;
+   const Total= FeePerDay * overduedays;
+   console.log(`the late fee is $${Total.toFixed(2)}`);
+}
+const overduedays= prompt("enter the number of overduedays");
+calculateLateFee(overduedays);
+*/
 
 
 /*
