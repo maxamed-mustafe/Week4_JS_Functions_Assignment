@@ -59,10 +59,41 @@ Output: "Red: You are passionate and bold."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function findColorMeaning(color){
+   if(color=="blue"){
+      console.log("blue: you love calm and peace");}
+      else if(color=="red"){
+         console.log("red: you are passionate and bold");}
+         else if(color=="green"){
+            console.log("green:you are connected to nature");}
+            else if(color=="yellow"){
+               console.log("yellow: you radiate happiness and energy");}
+               else{
+                  console.log("that's a unique choice!");}
 
+}
+
+const color= prompt("enter your favorite color");
+findColorMeaning(color);
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
+
+/*const findColorMeaning=(color)=>{
+   if(color=="blue"){
+      console.log("blue: you love calm and peace");}
+      else if(color=="red"){
+         console.log("red: you are passionate and bold");}
+         else if(color=="green"){
+            console.log("green:you are connected to nature");}
+            else if(color=="yellow"){
+               console.log("yellow: you radiate happiness and energy");}
+               else{
+                  console.log("that's a unique choice!");}
+
+}
+const color=prompt("enter your favorite color");
+findColorMeaning(color); */
 
 
 
@@ -82,10 +113,22 @@ Output: "Case #12345: John Doe's case is now logged."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-
+function logCase(clientName, caseNumber){
+   console.log(`case #${caseNumber}: ${clientName}'s case is now logged.`)
+}
+logCase("maxamed", 22823);
+   
 
 // Extra Task:
+
 // - Rewrite the function as an arrow function.
+/* const logCase=(clientName, caseNumber)=>{
+   console.log(`case #${caseNumber}: ${clientName}'s case is now logged.`)
+}
+logCase("maxamed", 22823); */
+
+   
+
 
 
 /*
@@ -108,10 +151,32 @@ Output: "Amina is present."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function markAttendance(studentName, isPresent){
+   if(isPresent){
+      console.log(`${studentName} is present.`);
+      }
+      else{
+         console.log(`${studentName} is absent`)
+      }
+   }
+   markAttendance("jaamac", true); 
 
 
 // Extra Task:
+
 // - Convert the function into a function expression.
+/* const markAttendance= function(studentName, isPresent){
+   if(isPresent){
+      console.log(`${studentName} is present.`);
+      }
+      else{
+         console.log(`${studentName} is absent`)
+      }
+   }
+   markAttendance("jaamac", true); */
+
+
+
 
 
 
