@@ -214,3 +214,46 @@ Extra Credit:
 - Extend the program to accept multiple students' names and scores and generate a report for each student using a loop.
 - Use an arrow function for at least one of the functions.
 */
+function calculateAverage(subject1,subject2,subject3){
+
+   return(subject1+subject2+subject3)/3
+}
+
+const determineGrade=(averageScore)=>{
+   if(averageScore>=90){
+      return "A"
+   }
+   else if(averageScore>=80 && averageScore<=89){
+      return "B"
+   }
+   else if(averageScore>=70 && averageScore<=79){
+      return "C"
+   }
+   else{
+      return "F"
+   }
+}
+
+function generateReport(studentName,subject1,subject2,subject3){
+   const average=calculateAverage(subject1,subject2,subject3)
+   const letterGrade= determineGrade(average)
+   return `${studentName} - Average Score: ${average. toFixed(2)}, Grade: ${letterGrade}`
+
+}
+const studentName=(prompt("please enter your name here!."))
+const subject1= Number(prompt("enter your first subject."))
+const subject2= Number(prompt("enter your second subject."))
+const subject3= Number(prompt("enter your third subject."))
+const studentReport=generateReport(studentName,subject1,subject2,subject3)
+console.log(studentReport);
+
+const students=prompt("how many students you want to check?")
+for(let i = 0; i < students; i++){
+   const studentName=prompt(`enter the name for student ${i+1}`)
+   const subject1=Number(prompt(`enter the first subject for student ${i+1}`))
+   const subject2=Number(prompt(`enter the second subject for student ${i+1}`))
+   const subject3=Number(prompt(`enter the third subject for student ${i+1}`))
+    
+   const studentReport=generateReport(studentName, subject1, subject2, subject3)
+   console.log(studentReport)
+}
